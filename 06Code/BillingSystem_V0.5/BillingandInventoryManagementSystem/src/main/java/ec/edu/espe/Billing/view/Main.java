@@ -72,7 +72,7 @@ public class Main {
         System.out.println("OK: Producto guardado.");
     }
 
-   
+    
     private static void sellAndInvoice() {
         if (inventory.isEmpty()) {
             System.out.println("Error: No hay productos.");
@@ -92,7 +92,7 @@ public class Main {
             
             System.out.println("\n--- TICKET DE VENTA ---");
             System.out.println("Producto: " + selectedProduct.getName());
-            System.out.println("Total a pagar: $" + totalWithTax);
+            System.out.printf("Total a pagar: $%.2f%n", totalWithTax);
             System.out.println("-----------------------");
         }
     }
