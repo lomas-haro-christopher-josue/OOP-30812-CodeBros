@@ -69,34 +69,68 @@ public class Main {
         inventory.add(new Product(id, name, price, stock));
         ec.edu.espe.Billing.controller.InvoiceController.saveInventory(inventory);
         
-        System.out.println("OK: Producto guardado.");
+        System.out.println("Producto guardado");
     }
 
     
-    private static void sellAndInvoice() {
-        if (inventory.isEmpty()) {
-            System.out.println("Error: No hay productos.");
+  private static void sellAndInvoice() {
+    if (inventory.isEmpty()) {
+        System.out.println("Error: No hay productos en el inventario.");
+        return;
+    }
+
+    
+    System.out.println("\n--- PRODUCTOS DISPONIBLES ---");
+    for (int i = 0; i < inventory.size(); i++) {
+        System.out.println((i + 1) + ". " + inventory.get(i).getName() + " (Stock: " + inventory.get(i).getStock() + ")");
+    }
+
+    System.out.print("\nElija el ID del producto: ");
+    int idProduct= input.nextInt() - 1;
+
+    if (idProduct >= 0 && idProduct < inventory.size()) {
+        Product selectedProduct = inventory.get(idProduct);
+
+        System.out.print("Digite la cantidad que desea vender: ");
+        int quantityProduct = input.nextInt();
+        input.nextLine(); 
+
+ 
+        if (quantityProduct > selectedProduct.getStock()) {
+            System.out.println("Error: No hay suficiente stock disponible.");
             return;
         }
 
-        
-        System.out.println("\nElija el producto:");
-        for (int i = 0; i < inventory.size(); i++) {
-            System.out.println((i + 1) + ". " + inventory.get(i).getName());
-        }
-        
-        int index = input.nextInt() - 1;
-        if (index >= 0 && index < inventory.size()) {
-            Product selectedProduct = inventory.get(index);
-            double totalWithTax = selectedProduct.getUnitPrice() * 1.15;
-            
-            System.out.println("\n--- TICKET DE VENTA ---");
-            System.out.println("Producto: " + selectedProduct.getName());
-            System.out.printf("Total a pagar: $%.2f%n", totalWithTax);
-            System.out.println("-----------------------");
-        }
-    }
+    
+        double subtotal = selectedProduct.getUnitPrice() * quantityProduct;
+        double total = subtotal * 1.15; 
 
+        Invoice currentInvoice = new Invoice();
+        currentInvoice.setInvoiceNumber(1); 
+        currentInvoice.setCustomer("Consumidor Final");
+        currentInvoice.setSubtotal(subtotal);
+        currentInvoice.setTotal(total);
+
+        selectedProduct.setStock(selectedProduct.getStock() - quantityProduct);
+
+      
+        System.out.println("\n--------------------------------");
+        System.out.println("      TICKET DE VENTA       \n");
+        System.out.println("Producto: " + selectedProduct.getName());
+        System.out.println("Cantidad: " + quantityProduct);
+        System.out.printf("Subtotal: $%.2f%n", currentInvoice.getSubtotal());
+        System.out.printf("Total (IVA 15%%): $%.2f%n", currentInvoice.getTotal());
+        System.out.println("--------------------------------");
+
+     
+        ec.edu.espe.Billing.controller.InvoiceController.saveInventory(inventory);
+        
+        System.out.println("Venta realizada y archivos actualizados.");
+
+    } else {
+        System.out.println("Opción no válida.");
+    }
+}
   
     private static void deleteProduct() {
         System.out.print("Ingrese ID a borrar: ");
