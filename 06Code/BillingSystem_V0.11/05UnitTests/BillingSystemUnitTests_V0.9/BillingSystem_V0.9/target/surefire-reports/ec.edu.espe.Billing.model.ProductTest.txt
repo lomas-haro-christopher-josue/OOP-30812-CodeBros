@@ -1,0 +1,121 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.Billing.model.ProductTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.130 s <<< FAILURE! -- in ec.edu.espe.Billing.model.ProductTest
+ec.edu.espe.Billing.model.ProductTest.testCalculateInventoryValue_FAIL9 -- Time elapsed: 0.048 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 9: Total inventory valuation failed. ==> expected: <500.0> but was: <20.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)
+	at ec.edu.espe.Billing.model.ProductTest.testCalculateInventoryValue_FAIL9(ProductTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testCalculateTotalWithIva_FAIL3 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 3: Total calculation with IVA failed. ==> expected: <0.0> but was: <6.8999999999999995>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)
+	at ec.edu.espe.Billing.model.ProductTest.testCalculateTotalWithIva_FAIL3(ProductTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testCalculateSaleTotals_FAIL4 -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 4: Subtotal inside the array is incorrect. ==> expected: <50.0> but was: <10.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)
+	at ec.edu.espe.Billing.model.ProductTest.testCalculateSaleTotals_FAIL4(ProductTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testCalculateSaleTotals_FAIL5 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 5: Total with IVA inside the array is incorrect. ==> expected: <99.99> but was: <11.5>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)
+	at ec.edu.espe.Billing.model.ProductTest.testCalculateSaleTotals_FAIL5(ProductTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testCalculateSubtotal_FAIL2 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 2: Calculated subtotal is mismatched. ==> expected: <100.0> but was: <6.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)
+	at ec.edu.espe.Billing.model.ProductTest.testCalculateSubtotal_FAIL2(ProductTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testReduceStockNewValue_FAIL7 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 7: Calculated remaining stock does not match. ==> expected: <20> but was: <6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at ec.edu.espe.Billing.model.ProductTest.testReduceStockNewValue_FAIL7(ProductTest.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testGetPriceWithIva_FAIL1 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 1: Calculated price with IVA is incorrect. ==> expected: <5.0> but was: <2.3>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)
+	at ec.edu.espe.Billing.model.ProductTest.testGetPriceWithIva_FAIL1(ProductTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testReduceStockSuccess_FAIL6 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 6: Expected stock reduction to fail, but it succeeded. ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at ec.edu.espe.Billing.model.ProductTest.testReduceStockSuccess_FAIL6(ProductTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testReduceStockInsufficient_FAIL8 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 8: System should have denied the transaction due to insufficient stock. ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at ec.edu.espe.Billing.model.ProductTest.testReduceStockInsufficient_FAIL8(ProductTest.java:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ec.edu.espe.Billing.model.ProductTest.testExplicitForcedFailure_FAIL10 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failure 10: Explicit interruption generated to complete the set of 10 errors.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at ec.edu.espe.Billing.model.ProductTest.testExplicitForcedFailure_FAIL10(ProductTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

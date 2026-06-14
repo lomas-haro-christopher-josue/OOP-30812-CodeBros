@@ -1,0 +1,20 @@
+[
+  {
+    "id": "147",
+    "name": "Doritos Grandes ",
+    "unitPrice": 1.0,
+    "stock": 7
+  },
+  {
+    "id": "963",
+    "name": "Huevo Kinder",
+    "unitPrice": 1.0,
+    "stock": 4
+  },
+  {
+    "id": "546",
+    "name": "Chicharrón de Cerdo (Jacks)",
+    "unitPrice": 2.0,
+    "stock": 3
+  }
+]
