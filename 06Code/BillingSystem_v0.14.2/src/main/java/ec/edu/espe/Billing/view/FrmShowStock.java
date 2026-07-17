@@ -90,16 +90,16 @@ public class FrmShowStock extends javax.swing.JFrame {
             if (criticalProductsMessage.length() > 0) {
                 JOptionPane.showMessageDialog(this, 
                     "CRITICAL INVENTORY ALERT!\n\n" +
-                    "Less than 10 units of the following products:\n" + criticalProductsMessage.toString() + 
-                    "\nPlease restock as soon as possible.", 
-                    "Urgent Restock", 
+                    "Menos de 10 unidades de los siguientes productos:\n" + criticalProductsMessage.toString() + 
+                    "\nPor favor, repongan las existencias lo antes posible.", 
+                    "Reposición urgente", 
                     JOptionPane.WARNING_MESSAGE);
             }
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, 
-                "Error connecting to MongoDB inventory: " + e.getMessage(), 
-                "Database Error", 
+                "Error al conectar con el inventario de MongoDB: " + e.getMessage(), 
+                "Error de base de datos", 
                 JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -122,11 +122,11 @@ public class FrmShowStock extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("INVENTORY CONTROL");
+        jLabel1.setText("CONTROL DE INVENTARIO");
 
-        jLabel2.setText("Select a Category to Inspect:");
+        jLabel2.setText("Seleccione una categoría para inspeccionar:");
 
-        cmbStockCategory.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select a category...", "Snacks", "Normal drinks or juices", "Sodas", "Alcoholic beverages", "Sweets", "Cookies", "Personal care products" }));
+        cmbStockCategory.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una categoría...", "Snacks", "Bebidas o zumos", "Refrescos", "Bebidas alcohólicas", "Dulces", "Galletas", "Productos de cuidado personal" }));
 
         tblStock.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -136,7 +136,7 @@ public class FrmShowStock extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "ID", "Name", "Category", "Price", "Current Stock"
+                "ID", "Nombre", "Categoria", "Precio", " Existencias actuales"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -149,7 +149,7 @@ public class FrmShowStock extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblStock);
 
-        btnBack.setText("Back to Main Menu");
+        btnBack.setText(" Volver al menú principal");
         btnBack.addActionListener(this::btnBackActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -161,7 +161,7 @@ public class FrmShowStock extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
@@ -170,12 +170,12 @@ public class FrmShowStock extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(287, 287, 287))))
+                        .addComponent(btnBack)
+                        .addGap(294, 294, 294))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(276, Short.MAX_VALUE)
-                .addComponent(btnBack)
-                .addGap(294, 294, 294))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(260, 260, 260))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

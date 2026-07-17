@@ -107,7 +107,7 @@ private void generateInvoice() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Invoice Preview");
+        jLabel1.setText(" Vista previa de la factura");
 
         txtInvoicePreview.setEditable(false);
         txtInvoicePreview.setColumns(20);
@@ -115,10 +115,10 @@ private void generateInvoice() {
         txtInvoicePreview.setRows(5);
         jScrollPane1.setViewportView(txtInvoicePreview);
 
-        btnPrint.setText("Print / Save PDF");
+        btnPrint.setText(" Imprimir / Guardar como PDF");
         btnPrint.addActionListener(this::btnPrintActionPerformed);
 
-        btnBack.setText("Back to Menu");
+        btnBack.setText(" Volver al menú");
         btnBack.addActionListener(this::btnBackActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -127,17 +127,18 @@ private void generateInvoice() {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnPrint)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
-                        .addComponent(btnBack)))
+                .addComponent(jScrollPane1)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(172, 172, 172)
+                .addGap(142, 142, 142)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(btnPrint)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addComponent(btnBack)
+                .addGap(21, 21, 21))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

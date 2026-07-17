@@ -21,10 +21,10 @@ ec\edu\espe\Billing\Utils\MongoDBConnection.class
 ec\edu\espe\Billing\view\FrmShowStock$1.class
 ec\edu\espe\Billing\model\Customer.class
 ec\edu\espe\Billing\model\Payment.class
-ec\edu\espe\Billing\view\FrmCustomerNuevo.class
 ec\edu\espe\Billing\controller\CustomerController.class
 ec\edu\espe\Billing\view\FrmProductRegistration$1.class
 ec\edu\espe\Billing\view\FrmDeleteProduct$1.class
+ec\edu\espe\Billing\view\FrmSale$1.class
 ec\edu\espe\Billing\model\Category.class
 ec\edu\espe\Billing\view\FrmDeleteCustomer$1.class
 ec\edu\espe\Billing\view\FrmMenu.class

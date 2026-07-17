@@ -58,55 +58,55 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("WELCOME TO LA VICTORIA SUPERMARKET SYSTEM");
 
-        mnuCompany.setText("Company");
+        mnuCompany.setText("Compañía");
 
-        itmRegisterCompany.setText("Register Company");
+        itmRegisterCompany.setText(" Registrar empresa");
         itmRegisterCompany.addActionListener(this::itmRegisterCompanyActionPerformed);
         mnuCompany.add(itmRegisterCompany);
 
         jMenuBar1.add(mnuCompany);
 
-        mnuCustomer.setText("Customer");
+        mnuCustomer.setText(" Cliente");
 
-        itmRegisterCustomer.setText("Register Customer");
+        itmRegisterCustomer.setText(" Registrar cliente");
         itmRegisterCustomer.addActionListener(this::itmRegisterCustomerActionPerformed);
         mnuCustomer.add(itmRegisterCustomer);
 
-        itmDeleteCustomer.setText("Delete Customer");
+        itmDeleteCustomer.setText(" Eliminar cliente");
         itmDeleteCustomer.addActionListener(this::itmDeleteCustomerActionPerformed);
         mnuCustomer.add(itmDeleteCustomer);
 
         jMenuBar1.add(mnuCustomer);
 
-        mnuProduct.setText("Product");
+        mnuProduct.setText(" Producto");
 
-        itmRegisterProduct.setText("Register Product");
+        itmRegisterProduct.setText(" Registrar producto");
         itmRegisterProduct.addActionListener(this::itmRegisterProductActionPerformed);
         mnuProduct.add(itmRegisterProduct);
 
-        itmDeleteProduct.setText("Delete Product");
+        itmDeleteProduct.setText(" Eliminar producto");
         itmDeleteProduct.addActionListener(this::itmDeleteProductActionPerformed);
         mnuProduct.add(itmDeleteProduct);
 
-        itmViewInventory.setText("View Inventory");
+        itmViewInventory.setText(" Ver inventario");
         itmViewInventory.addActionListener(this::itmViewInventoryActionPerformed);
         mnuProduct.add(itmViewInventory);
 
         jMenuBar1.add(mnuProduct);
 
-        mnuSales.setText("Sales");
+        mnuSales.setText(" Ventas");
 
-        itmCreateSale.setText("Make Sale");
+        itmCreateSale.setText(" Realizar venta");
         itmCreateSale.addActionListener(this::itmCreateSaleActionPerformed);
         mnuSales.add(itmCreateSale);
 
-        itmPrintInvoice.setText("Print Invoice");
+        itmPrintInvoice.setText(" Imprimir factura");
         itmPrintInvoice.addActionListener(this::itmPrintInvoiceActionPerformed);
         mnuSales.add(itmPrintInvoice);
 
         jMenuBar1.add(mnuSales);
 
-        mnuReports.setText("Reports");
+        mnuReports.setText("Reportes ");
         mnuReports.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mnuReportsMouseClicked(evt);
@@ -114,7 +114,7 @@ public class FrmMenu extends javax.swing.JFrame {
         });
         jMenuBar1.add(mnuReports);
 
-        menuExit.setText("Exit");
+        menuExit.setText("Salir");
         menuExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuExitMouseClicked(evt);
