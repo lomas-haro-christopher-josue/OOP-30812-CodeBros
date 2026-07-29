@@ -10,7 +10,7 @@ public class Customer {
     private String name;
     private String address;
     private String gmailCustomer; 
-    // SE AGREGÓ 'private transient' PARA QUE GSON NO SE CAIGA AL LEER EL JSON
+    
     private transient Scanner entrada = new Scanner(System.in);
 
     public Customer() {

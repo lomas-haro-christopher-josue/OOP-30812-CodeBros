@@ -17,8 +17,8 @@ ec\edu\espe\Billing\model\IProduct.class
 ec\edu\espe\Billing\view\FrmDeleteCustomer.class
 ec\edu\espe\Billing\model\ICustomer.class
 ec\edu\espe\Billing\view\FrmDeleteProduct$3.class
+ec\edu\espe\Billing\Utils\MongoDBConnection.class
 ec\edu\espe\Billing\view\FrmShowStock$1.class
-utils\TestMongo.class
 ec\edu\espe\Billing\model\Customer.class
 ec\edu\espe\Billing\model\Payment.class
 ec\edu\espe\Billing\controller\CustomerController.class
@@ -38,8 +38,8 @@ ec\edu\espe\Billing\view\FrmReport.class
 ec\edu\espe\Billing\model\Invoice.class
 ec\edu\espe\Billing\view\FrmDeleteProduct$2.class
 ec\edu\espe\Billing\view\FrmLogin.class
+ec\edu\espe\Billing\Utils\TestMongo.class
 ec\edu\espe\Billing\view\FrmShowStock.class
-utils\MongoDBConnection.class
 ec\edu\espe\Billing\controller\CategoryController.class
 ec\edu\espe\Billing\view\FrmReport$1.class
 ec\edu\espe\Billing\view\FrmCustomerRegistration.class
